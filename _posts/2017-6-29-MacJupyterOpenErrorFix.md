@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Data science tech support episode 1
+tags: mac jupyter
 ---
 
 Trying to do data science with Python and Jupyter notebook on a Mac and find Jupyter doesn't want to automatically open your notebook like it used to? Do you not want to copy and paste, but would rather the URL opens in the web browser tab?
