@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+I am interested in the field of data science, particularly the engineering and architecture side.  I have been a professional system administrator motivated to help fellow scientists in Linux high-performance computing environments for nearly twenty years.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[chris-r-harwell@gmail.com(mailto:chris-r-harwell@gmail.com)
