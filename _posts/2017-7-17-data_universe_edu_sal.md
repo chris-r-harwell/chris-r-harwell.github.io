@@ -5,16 +5,16 @@ tags: school salary pandas python
 ---
 
 
-Recently I was looking for a source of data on the web which would be amenable to learning how to use the Python Beautiful Soup library for web scraping.  Ironically I found many web sites which provided csv or other raw data, but that wouldn't make use of web scraping.  On the other end of the spectrum I found web sites with intriguing data all hidden behind JavaScript layers, which would call for a tool more like selenium and I wanted to use Beautiful Soup.  Anyway, after much searching I found
+Recently I was looking for a source of data on the web which would be amenable to learning how to use the [Python](http://www.python.org) [Beautiful Soup library](https://www.crummy.com/software/BeautifulSoup/) for web scraping.  Ironically I found many web sites which provided csv or other raw data, but that wouldn't make use of web scraping.  On the other end of the spectrum I found web sites with intriguing data all hidden behind JavaScript layers, which would call for a tool more like selenium and I wanted to use Beautiful Soup.  Anyway, after much searching I found
 [Data Universe of Asbury Park Press](http://php.app.com/agent/educationstaff) which not only some data in HTML, but had a nice sampling.  That is some data in tables, some data in just text and all spread around multiple pages.
 
 The data covered educational staff salaries for all NJ public schools in 2016.  I chose to use a [subset](http://php.app.com/agent/educationstaff/search?last_name=&first_name=&county=MORRIS&district=SCH+DIST+OF+THE+CHATHAMS&school=).  of the data which had more meaning to me - just that from Morris County's School District of the Chathams where my kids go.  First, I browsed through the data and inspected it for regularness and pattern which would allow a simple program to digest it.  Luckily, it looked like the site followed a regular, predictable pattern.  
 
 The tools used include
-1. Python 3.5.3  
-2. Python3-requests-2.10.0-4.fc25.noarch  
-3. Python3-beautifulsoup4-4.6.0-1.fc25.noarch  
-4. python3-pandas-0.19.0-1.fc25.x86_64  
+1. Python 3.5.3  [Python](http://www.python.org)   
+2. Python3-requests-2.10.0-4.fc25.noarch [Requests: HTTP for humans](http://docs.python-requests.org/en/master/) 
+3. Python3-beautifulsoup4-4.6.0-1.fc25.noarch  [Beautiful Soup library](https://www.crummy.com/software/BeautifulSoup/)  
+4. python3-pandas-0.19.0-1.fc25.x86_64 [Pandas](http://pandas.pydata.org/)  
 
 
 The overview listing pages with maybe ten staff per page had the page numbers were nicely appended to the URLs.  
@@ -108,4 +108,4 @@ DescribeResult(nobs=393, minmax=(21236.0, 164303.0), mean=71931.325699745546, va
 
 Dividing the data up into small ranges or bins and then putting them on a bar chart gives a visual of the distribution.
 
-[Histogram](/images/data_universe_edu_sal_ch_hist.png "Histogram")
+![Histogram](/images/data_universe_edu_sal_ch_hist.png "Histogram")
