@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Local data - 2016 School District of the Chathams Salary info
+title: Local data 2016 School District of the Chathams Salary info
 tags: school salary pandas python
 ---
 

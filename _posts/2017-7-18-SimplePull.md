@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data science tech support episode 2: making a clean pull request using a branch
+title: Data science tech support episode 2 making a clean pull request using a branch
 tags: git pull
 ---
 
