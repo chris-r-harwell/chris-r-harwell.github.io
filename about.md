@@ -8,4 +8,4 @@ I am interested in the field of data science, particularly the engineering and a
 
 ### Contact me
 
-[chris-r-harwell@gmail.com(mailto:chris-r-harwell@gmail.com)]
+[chris-r-harwell@gmail.com](mailto:chris-r-harwell@gmail.com)
