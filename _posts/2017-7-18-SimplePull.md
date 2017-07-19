@@ -4,10 +4,9 @@ title: Data science tech support episode 2: making a clean pull request using a 
 tags: git pull
 ---
 
-
-The github and the git source control system can be intimidating sometimes.  A class I recently took insisted that students pull their repo, add a unique file and create a pull request to turn in assignments.  The setup was such that the they forked the primary repo on github and then checked that out on laptops.  So, three versions:
+The GitHub and the git source control system can be intimidating sometimes.  A class I recently took insisted that students pull their repo, add a unique file and create a pull request to turn in assignments.  The setup was such that the they forked the primary repo on GitHub and then checked that out on laptops.  So, three versions:
 1. upstream (the class copy)
-2. origin (their github copy, forked from above)
+2. origin (their GitHub copy, forked from above)
 3. local (their laptop copy, created with git clone ...)
 
 This is a good opportunity to get used to the work flow which many software projects using git take advantage of, but it can also be a source of frustration.
@@ -30,7 +29,7 @@ git remote add upstream  git@github.com:thisismetis/nyc17_ds12.git
 cp my-file-to-turn-in ~/
 ```
 
-3. _fetch_ the updates for the origin and upstream remotes from github to your local clone.
+3. _fetch_ the updates for the origin and upstream remotes from GitHub to your local clone.
 ```
 git remote update
 ```
@@ -54,7 +53,7 @@ git commit -m 'adding that file i want to turn in' my-file-to-turn-in
 git push origin clean-pull
 ```
 
-7. Visit your github page for this repo and check the top where it says,
+7. Visit your GitHub page for this repo and check the top where it says,
 'Your recently pushed branches:' and click on the green "Compare & pull request" button
 to make the pull request.
 
