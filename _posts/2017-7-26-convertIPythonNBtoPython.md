@@ -4,7 +4,17 @@ title: command line Python script for converting IPython to Python
 tags: IPython PythonconvertIPythonNBtoPython
 ---
 
-I am quite liking the Jupyter/IPython notebook approach to early stage development and exploration, but there are times when I just want the .py version.  It is nice to quickly refer to with vi or do some other testing.  Anyway, I decided to write a script to convert the notebook format files to python files using the existing libraries.  First, we gather a list of likely files using the find command and the .pynb.  The nice thing about using find is that if we put a directory in TOP_PATH it will do a recursive check into all directories below that too.  We do some manipulations in order to get the path name and create an output file name.  We check to make sure that the input file actually has something in it, that is that it is non-zero in length.  I considered validating that the file was JSON, but ended up just putting a try, except clause in the convertNotebook routing, which is just an amalgamation of two stack exchange answers.  Neither worked for me on Fedora 25, so I combined and adapted them. We also don't create a new one if the file already exists.  You may want to add some time stamp comparison, but I chose to just skip the conversion altogether if it exists. That is it. Let me know if this helps you.
+I am quite liking the Jupyter/IPython notebook approach to early stage development and exploration, but there are times when I just want the .py version.  It is nice to quickly refer to with vi or do some other testing.  
+
+Anyway, I decided to write a script to convert the notebook format files to python files using the existing libraries.  There are just a few steps:
+
+1. First, we gather a list of likely files using the find command and the .pynb.  The nice thing about using find is that if we put a directory in TOP_PATH it will do a recursive check into all directories below that too.  
+2. We then do some manipulations in order to get the path name and create an output file name.  
+3. We also check to make sure that the input file actually has something in it, that is that it is non-zero in length.  I considered validating that the file was JSON, but ended up just putting a try, except clause in the convertNotebook routing.
+4. Then we call the convertNotebook function, which is just an amalgamation of several stack exchange answers.  Neither worked on its own for me on Fedora 25. So, I combined and adapted them. 
+5. We also don't create a py file if the file already exists.  You may want to add some time stamp comparison, but I chose to just skip the conversion altogether if it exists.  
+
+That is it. Let me know if this helps you.
 
 ```
 #!/bin/env python3
